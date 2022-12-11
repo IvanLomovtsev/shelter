@@ -8,9 +8,14 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'index.[contenthash].js',
+        assetModuleFilename: "assets/images/[name].[contenthash][ext]",
       },
     module: {
         rules: [
+            {
+                test: /\.html$/i,
+                loader: 'html-loader',
+            },
             {
                 test: /\.js$/,
                 use: 'babel-loader',
@@ -24,6 +29,17 @@ module.exports = {
                     'postcss-loader', 
                     'sass-loader'
                 ],
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.svg$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/icons/[name].[contenthash][ext]',
+                },
             },
         ],
     },

@@ -6,4 +6,4 @@ function component(text) {
   
 document.body.prepend(component('Проект собран на Webpack'));
 
-import './main.scss';
+import './styles/main.scss';

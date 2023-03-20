@@ -1,0 +1,12 @@
+$font-size: 1rem;
+$font-color: lch(28 99 35);
+
+html {
+  font-size: $font-size;
+  color: $font-color;
+}
+div {
+    width: 300px;
+    height: 150px;
+    background-image: url("./images/image.png");
+}

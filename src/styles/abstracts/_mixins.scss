@@ -1,0 +1,13 @@
+@mixin button () {
+    padding: 15px 45px;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;   
+    letter-spacing: 0.06em;
+    color: #292929;
+    outline: none; 
+    border: 0;
+    border-radius: 100px;
+}

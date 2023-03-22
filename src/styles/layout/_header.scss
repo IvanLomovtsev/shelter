@@ -1,0 +1,60 @@
+.header {
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        margin-top: 21px;
+        .logo__title {
+            color: #F1CDB3;
+            font-family: Georgia;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            margin: 6px 0;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.06em;
+        }
+        .logo__subtitle {
+            color: #FFFFFF;
+            margin: 0;
+            font-family: Arial;
+            font-size: 0.81rem;
+            font-style: normal;
+            font-weight: 400;
+            text-align: center;
+            letter-spacing: 0.1em;
+        }
+    }
+    .navigation {
+        width:  36.9%;
+        .menu {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .menu__item {
+                margin-top: 26px;
+                list-style-type: none;
+                .link {
+                    padding-bottom: 3px;
+                    text-decoration: none;
+                    font-family: 'Arial';
+                    font-size: 0.94rem;
+                    line-height: 160%;
+                    font-style: normal;
+                    font-weight: 400;
+                    color: #CDCDCD;
+                }
+                .link_active {
+                    color: #FAFAFA;
+                    border-bottom: solid #F1CDB3;
+                    height: 3px;
+                }
+            }
+        }
+    }
+}

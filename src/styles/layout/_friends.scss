@@ -1,0 +1,75 @@
+@use '../abstracts/mixins' as *;
+
+.friends {
+    background: #F6F6F6;
+    padding-bottom: 1%;
+    .friends__subtitle {
+        @include subtitle;
+        width: 500px;
+        margin: auto;
+        padding: 5.7% 0 4.5%;
+        text-align: center;
+    }
+    .slider {
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        .arrow {
+            width: 52px;
+            height: 52px;
+            border: 2px solid #F1CDB3;
+            border-radius: 100px;
+            font-size: 19px;
+        }
+        .cards {
+            width: 82.5%;
+            overflow: hidden;
+            .band {
+                width: 2790px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                .pet {
+                    width: 270px;
+                    border-radius: 9px;
+                    background: #FAFAFA;
+                    .pet_image {
+                        display: block;
+                        border-radius: 9px 9px 0 0;
+                        margin-bottom: 30px;
+                    }
+                    .pet_name {
+                        font-family: 'Georgia';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 23px;
+                        text-align: center;
+                        letter-spacing: 0.06em;
+                        color: #545454;
+                    }
+                    .pet_button {
+                        @include button;
+                        display: block;
+                        margin: 30px auto -12px;
+                        padding: 13px 44px;
+                        background: #FAFAFA;
+                        border: 2px solid #F1CDB3;
+                        border-radius: 100px;
+                    }
+                }
+            }
+        }
+    }
+    .friends__button {
+        @include button;
+        display: block;
+        margin: 4.6% auto 6.4%;
+        background: #F1CDB3;
+    }
+}

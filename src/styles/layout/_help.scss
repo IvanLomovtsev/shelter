@@ -1,0 +1,73 @@
+@use '../abstracts/mixins' as *;
+
+.help {
+    width: 1200px;
+    margin: auto;
+    .subtitle {
+        @include subtitle;
+        width: 30%;
+        margin: 6.8% auto 4.7%;
+        text-align: center;
+    }
+    .options {
+        width: 100%;
+        margin-top: 1%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+       .way {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10%;
+        margin-bottom: 3%;
+            .way__icon {
+                width: 60px;
+                height: 60px;
+            }
+            .food {
+                background: url("../icons/food.svg");
+            }
+            .transportation {
+                background: url("../icons/transportation.svg");
+            }
+            .toys {
+                background: url("../icons/toys.svg");
+            }
+            .bowls {
+                background: url("../icons/bowls-and-cups.svg");
+            }
+            .shampoos {
+                background: url("../icons/shampoos.svg");
+            }
+            .vitamins {
+                background: url("../icons/vitamins.svg");
+            }
+            .medicines {
+                background: url("../icons/medicines.svg");
+            }
+            .collars {
+                background: url("../icons/collars-or-leashes.svg");
+            }
+            .areas {
+                background: url("../icons/sleeping-area.svg");
+            }
+            .food, .transportation, .toys, .bowls, .shampoos, .vitamins, .medicines, .collars, .areas {
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+            .way__description {
+                font-family: Georgia;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.25rem;
+                line-height: 115%;
+                letter-spacing: 0.06em;
+                color: #545454;
+                margin-top: 30px;
+            }
+       }
+    }
+}

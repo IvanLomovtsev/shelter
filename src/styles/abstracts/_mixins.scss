@@ -10,6 +10,8 @@
     outline: none; 
     border: 0;
     border-radius: 100px;
+    cursor: pointer;
+    transition: 0.5s linear;
 }
 
 @mixin subtitle () {

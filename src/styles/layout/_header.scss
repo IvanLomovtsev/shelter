@@ -48,6 +48,12 @@
                     font-style: normal;
                     font-weight: 400;
                     color: #CDCDCD;
+                    transition: 0.1s ease;
+                    &:hover {
+                        color: #FAFAFA;
+                        border-bottom: solid #F1CDB3;
+                        height: 3px;
+                    }
                 }
                 .link_active {
                     color: #FAFAFA;

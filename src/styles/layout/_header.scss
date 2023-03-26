@@ -29,6 +29,15 @@
             letter-spacing: 0.1em;
         }
     }
+    .logo_pets {
+        margin-bottom: 30px;
+        .logo__title_pets {
+            color: #545454;
+        }
+        .logo__subtitle_pets {
+            color: #292929;
+        }
+    }
     .navigation {
         width:  36.9%;
         .menu {
@@ -42,7 +51,7 @@
                 .link {
                     padding-bottom: 3px;
                     text-decoration: none;
-                    font-family: 'Arial';
+                    font-family: Arial;
                     font-size: 0.94rem;
                     line-height: 160%;
                     font-style: normal;
@@ -60,6 +69,32 @@
                     border-bottom: solid #F1CDB3;
                     height: 3px;
                 }
+            }
+        }
+    }
+    .navigation_pets {
+        margin-top: -30px;
+        .item_pets {
+            .link_pets {
+                padding-bottom: 3px;
+                text-decoration: none;
+                font-family: Arial;
+                font-size: 0.94rem;
+                line-height: 160%;
+                font-style: normal;
+                font-weight: 400;
+                color: #545454;
+                transition: 0.1s ease;
+                &:hover {
+                    color: #292929;
+                    border-bottom: solid #F1CDB3;
+                    height: 3px;
+                }
+            }
+            .link_pets_active {
+                color: #292929;
+                border-bottom: solid #F1CDB3;
+                height: 3px;
             }
         }
     }

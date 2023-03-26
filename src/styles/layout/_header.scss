@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     .logo {
+        text-decoration: none;
         margin-top: 21px;
         .logo__title {
             color: #F1CDB3;
@@ -31,6 +32,7 @@
     }
     .logo_pets {
         margin-bottom: 30px;
+        text-decoration: none;
         .logo__title_pets {
             color: #545454;
         }

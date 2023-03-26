@@ -11,7 +11,7 @@
         text-align: center;
     }
     .friends__subtitle_pets {
-        padding: 6.1% 0 4.2%;
+        padding: 6.2% 0 4.8%;
     }
     .slider {
         width: 1200px;
@@ -65,6 +65,7 @@
     line-height: 115%;
     letter-spacing: 0.06em;
     transition: 0.5s linear;
+    text-align: center;
     &:hover {
         border: 2px solid #FDDCC4;
         background: #FDDCC4;
@@ -118,7 +119,7 @@
 }
 .page-controls {
     width: 340px;
-    margin: 35px auto 86px;
+    margin: 33px auto 87px;
     display: flex;
     justify-content: space-between;
     .page_current {

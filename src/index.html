@@ -10,10 +10,10 @@
 <body>
   <section class="welcome">
     <header class="header">
-      <div class="logo">
+      <a class="logo" href="">
         <h1 class="logo__title">Cozy House</h1>
         <p class="logo__subtitle">Shelter for pets in Boston</p>
-      </div>
+      </a>
       <nav class="navigation">
         <ul class="menu">
           <li class="menu__item"><a class="link link_active" href="#about">About the shelter</a></li>
@@ -29,7 +29,9 @@
         <p class="description__p">We offer to give a chance to a little and nice 
           puppy with an extremely wide and open heart. He or she will love you more 
           than anybody else in the world, you will see!</p>
-        <button class="button">Make a friend</button>
+        <form action="#friends">
+          <button class="button">Make a friend</button>
+        </form>
       </div>
       <img class="description__image" src="./images/start-screen-puppy.png" alt="puppy">
     </div>
@@ -50,7 +52,7 @@
       </p>
     </div>
   </section>
-  <section class="friends">
+  <section class="friends" id="friends">
     <h3 class="friends__subtitle">Our friends who 
       <br>are looking for a house</h3>
     <div class="slider">
@@ -101,7 +103,9 @@
       </div>
       <button class="arrow">🠦</button>
     </div>
-    <button class="friends__button">Get to know the rest</button>
+    <form action="pets.html">
+      <button class="friends__button">Get to know the rest</button>
+    </form>
   </section>
   <section class="help" id="help">
     <h3 class="subtitle">How you can help our shelter</h3>
@@ -150,10 +154,10 @@
       <div class="donation">
         <h3 class="subtitle">You can also <br> make a donation</h3>
         <p class="donation__bank">Name of the bank / Type of bank account</p>
-        <div class="donation__card">
+        <a class="donation__card" href="">
           <div class="card__icon"></div>
           <p class="card__number">8380 2880 8028 8791 7435</p>
-        </div>
+        </a>
         <p class="donation__note">Legal information and lorem ipsum dolor sit amet, 
           consectetur adipiscing elit. Maecenas a ipsum at libero sagittis 
           dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. 

@@ -2,7 +2,7 @@
 
 .addition {
     background: #F6F6F6;
-    padding: 80px 0 87px;
+    padding: 80px 0 90px;
     .content {
         width: 915px;
         margin: auto;
@@ -40,6 +40,7 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
+                text-decoration: none;
                 .card__icon {
                     width: 30px;
                     height: 23px;
@@ -65,7 +66,7 @@
                 font-size: 12px;
                 line-height: 18px;
                 color: #B2B2B2;
-                margin-top: 6%;
+                margin-top: 5.2%;
             }
         }
     }

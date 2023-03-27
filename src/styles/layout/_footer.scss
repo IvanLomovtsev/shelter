@@ -1,0 +1,73 @@
+.footer {
+    background: url("../images/noise_transparent2x.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+    padding-top: 1.5%;
+    .container {
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        .info {
+            .info__subtitle {
+                font-family: 'Georgia';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2.19rem;
+                line-height: 130%;
+                letter-spacing: 0.06em;
+                color: #FFFFFF;
+                margin-bottom: 8.5%;
+            }
+            .email {
+                margin-bottom: 4%;
+                .email__icon {
+                    width: 40px;
+                    height: 32px;
+                    margin-right: 20px;
+                    background: url("../icons/icon-email.svg");
+                }
+            }
+            .tel {
+                .tel__icon {
+                    width: 40px;
+                    height: 32px;
+                    margin-right: 20px;
+                    background: url("../icons/icon-phone.svg");
+                } 
+            }
+            .location {
+                margin-top: -4%;
+                margin-bottom: 3%;
+                .location__icon {
+                    width: 22px;
+                    height: 32px;
+                    margin-right: 20px;
+                    background: url("../icons/pin.svg");
+                }
+            }
+            .email, .tel, .location {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                text-decoration: none;
+            }
+        }
+        .info_center {
+            margin-left: -6px;
+        }
+        .contact {
+            font-family: Georgia;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 115%;
+            letter-spacing: 0.06em;
+            color: #F1CDB3;
+        }
+    }
+    .footer__image {
+        margin-top: 20px;
+    }
+}

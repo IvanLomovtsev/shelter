@@ -1,0 +1,103 @@
+.header {
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        text-decoration: none;
+        margin-top: 21px;
+        .logo__title {
+            color: #F1CDB3;
+            font-family: Georgia;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            margin: 6px 0;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.06em;
+        }
+        .logo__subtitle {
+            color: #FFFFFF;
+            margin: 0;
+            font-family: Arial;
+            font-size: 0.81rem;
+            font-style: normal;
+            font-weight: 400;
+            text-align: center;
+            letter-spacing: 0.1em;
+        }
+    }
+    .logo_pets {
+        margin-bottom: 30px;
+        text-decoration: none;
+        .logo__title_pets {
+            color: #545454;
+        }
+        .logo__subtitle_pets {
+            color: #292929;
+        }
+    }
+    .navigation {
+        width:  36.9%;
+        .menu {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .menu__item {
+                margin-top: 26px;
+                list-style-type: none;
+                .link {
+                    padding-bottom: 3px;
+                    text-decoration: none;
+                    font-family: Arial;
+                    font-size: 0.94rem;
+                    line-height: 160%;
+                    font-style: normal;
+                    font-weight: 400;
+                    color: #CDCDCD;
+                    transition: 0.1s ease;
+                    &:hover {
+                        color: #FAFAFA;
+                        border-bottom: solid #F1CDB3;
+                        height: 3px;
+                    }
+                }
+                .link_active {
+                    color: #FAFAFA;
+                    border-bottom: solid #F1CDB3;
+                    height: 3px;
+                }
+            }
+        }
+    }
+    .navigation_pets {
+        margin-top: -30px;
+        .item_pets {
+            .link_pets {
+                padding-bottom: 3px;
+                text-decoration: none;
+                font-family: Arial;
+                font-size: 0.94rem;
+                line-height: 160%;
+                font-style: normal;
+                font-weight: 400;
+                color: #545454;
+                transition: 0.1s ease;
+                &:hover {
+                    color: #292929;
+                    border-bottom: solid #F1CDB3;
+                    height: 3px;
+                }
+            }
+            .link_pets_active {
+                color: #292929;
+                border-bottom: solid #F1CDB3;
+                height: 3px;
+            }
+        }
+    }
+}

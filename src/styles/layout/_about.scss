@@ -1,18 +1,36 @@
 @use '../abstracts/mixins' as *;
 
 .about {
-    width: 1200px;
+    width: 93.75%;
     margin: 6.2% auto 8%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media screen and (max-width: 900px) and (min-width: 768px) {
+        margin: 8.8% auto 4.5%;
+    }
     .about__image {
         margin-left: 14.7%;
+        @media screen and (max-width: 1120px) and (min-width: 768px) {
+            order: 2;
+            display: block;
+            margin: 65px auto;
+        }
     }
     .about__description {
         margin-right: 14.4%;
         width: 36%;
+        @media screen and (max-width: 1120px) and (min-width: 900px) {
+            order: 1;
+            width: 40%;
+            margin: auto;
+        }
+        @media screen and (max-width: 899px) and (min-width: 768px) {
+            order: 1;
+            width: 60%;
+            margin: auto;
+        }
         .about__subtitle {
             @include subtitle;
             width: 80%;

@@ -1,9 +1,12 @@
 .header {
     margin: auto;
-    width: 1200px;
+    width: 93.75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 1000px) and (min-width: 768px) {
+        width: 92%;
+    }
     .logo {
         text-decoration: none;
         margin-top: 21px;
@@ -42,6 +45,12 @@
     }
     .navigation {
         width:  36.9%;
+        @media screen and (max-width: 1100px) and (min-width: 900px) {
+            width: 45%;
+        }
+        @media screen and (max-width: 899px) and (min-width: 768px) {
+            width: 62.5%;
+        }
         .menu {
             display: flex;
             flex-direction: row;

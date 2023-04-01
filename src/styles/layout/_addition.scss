@@ -3,6 +3,9 @@
 .addition {
     background: #F6F6F6;
     padding: 80px 0 90px;
+    @media screen and (max-width: 900px) {
+        padding: 80px 0 100px;
+    }
     .content {
         width: 915px;
         margin: auto;
@@ -10,13 +13,30 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media screen and (max-width: 1279px) {
+            width: 76.25%;
+        }
+        @media screen and (max-width: 1150px) {
+            width: 70%;
+            flex-direction: column;
+        }
         .addition__image {
             display: block;
             margin-top: -10px;
-            object-fit: none
+            object-fit: none;
+            @media screen and (max-width: 1150px) {
+                order: 2;
+                margin: auto;
+                margin-top: 50px;
+            }
         }
         .donation {
             width: 41.5%;
+            @media screen and (max-width: 1150px) {
+                width: 71%;
+                margin: auto;
+                order: 1;
+            }
             .subtitle {
                 @include subtitle;
                 margin: 0;

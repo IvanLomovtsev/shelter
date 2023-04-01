@@ -1,9 +1,12 @@
 .header {
     margin: auto;
-    width: 93.75%;
+    width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 1279px) and (min-width: 1001px) {
+        width: 93.75%;
+    }
     @media screen and (max-width: 1000px) and (min-width: 768px) {
         width: 92%;
     }

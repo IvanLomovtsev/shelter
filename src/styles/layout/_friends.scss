@@ -9,8 +9,16 @@
         margin: auto;
         padding: 6.2% 0 4.5%;
         text-align: center;
-        @media screen and (max-width: 900px) and (min-width: 768px) {
+        @media screen and (max-width: 900px) {
             padding: 10.5% 0 7.7%;
+        }
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            margin: auto;
+            font-size: 1.56rem;
+            text-align: center;
+            letter-spacing: 0.06em;
+            padding: 13% 0;
         }
     }
     .friends__subtitle_pets {
@@ -27,26 +35,38 @@
         @media screen and (max-width: 1279px) {
             width: 93.75%;
         }
-        @media screen and (max-width: 900px) and (min-width: 768px) {
+        @media screen and (max-width: 900px) {
             width: 92%;
+        }
+        @media screen and (max-width: 500px) {
+            flex-wrap: wrap;
         }
         .cards {
             width: 82.5%;
             overflow: hidden;
+            @media screen and (max-width: 500px) {
+                margin: auto;
+                margin-bottom: 7.2%;
+                width: 92%;
+                order: 1;
+            }
             .band {
                 width: 2790px;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
                 justify-content: space-between;
-                @media screen and (max-width: 1279px) and (min-width: 1150px) {
+                @media screen and (max-width: 1279px) {
                     width: calc(100vw*2.14);
                 }
-                @media screen and (max-width: 1149px) and (min-width: 1100px) {
+                @media screen and (max-width: 1150px) {
                     width: calc(100vw*2.1);
                 }
-                @media screen and (max-width: 1109px) and (min-width: 768px) {
+                @media screen and (max-width: 1100px) {
                     width: 420%;
+                }
+                @media screen and (max-width: 500px) {
+                    width: 1000%;
                 }
             }
         }
@@ -59,8 +79,11 @@
         &:hover {
             background: #FDDCC4;
         }
-        @media screen and (max-width: 1109px) and (min-width: 768px) {
+        @media screen and (max-width: 1110px) {
             margin: 8% auto 12%;
+        }
+        @media screen and (max-width: 500px) {
+            margin: 42px auto 40px;
         }
     }
 }
@@ -97,6 +120,19 @@
         &:hover {
             background: none;
         }
+    }
+    @media screen and (max-width: 500px) {
+        order: 2;
+    }
+}
+.arrow_back {
+    @media screen and (max-width: 500px) {
+        margin-left: 19%;
+    }
+}
+.arrow_forward {
+    @media screen and (max-width: 500px) {
+        margin-right: 19%;
     }
 }
 .pet {

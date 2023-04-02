@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and (max-width: 1279px) and (min-width: 1001px) {
+    @media screen and (max-width: 1279px) {
         width: 93.75%;
     }
     @media screen and (max-width: 1000px) {
@@ -51,13 +51,13 @@
     }
     .navigation {
         width:  36.9%;
-        @media screen and (max-width: 1100px) and (min-width: 900px) {
+        @media screen and (max-width: 1100px) {
             width: 45%;
         }
-        @media screen and (max-width: 899px) and (min-width: 501px) {
+        @media screen and (max-width: 900px) {
             width: 62.5%;
         }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 650px) {
             width: 10%;
         }
         .menu {
@@ -65,7 +65,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 650px) {
                 display: none;
             }
             .menu__item {
@@ -96,7 +96,7 @@
         }
         .menu__icon {
             display: none;              
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 650px) {
                 margin-top: 30px;
                 display: flex;
                 flex-direction: column;
@@ -111,46 +111,6 @@
             height: 2px;
             background-color: #F1CDB3;
         }
-
-        // .menu__icon::before, 
-        // .menu__icon::after {
-        //     @media screen and (max-width: 500px) {
-        //         content: "";
-        //     }
-        // }
-        // .menu__icon::before {
-        //     @media screen and (max-width: 500px) {
-        //         top: 0;
-        //     }
-        // }
-        // .menu__icon::after {
-        //     @media screen and (max-width: 500px) {
-        //         bottom: 0;
-        //     }
-        // }
-        // .menu__icon .second-line {
-        //     @media screen and (max-width: 500px) {
-        //         top: 8px;
-        //         transform: scale(1) translate(0px, -50%);
-        //     }
-        // }
-        // .menu__icon .third-line {
-        //     @media screen and (max-width: 500px) {
-        //         top: 16px;
-        //         transform: scale(1) translate(0px, -50%);
-        //     }
-        // }
-        // .menu__icon.active span{
-        //     transform: scale(0) translate(0px, -50%);
-        // }
-        // .menu__icon.active::before{
-        //     top: 12px;
-        //     transform: rotate(-45deg) translate(0px, -50%);
-        // }
-        // .menu__icon.active::after{
-        //     top: 11px;
-        //     transform: rotate(45deg) translate(0px, 50%);
-        // }
     }
     .navigation_pets {
         margin-top: -30px;

@@ -1,6 +1,9 @@
 .footer {
     background: url("../images/noise_transparent2x.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
     padding-top: 1.5%;
+    @media screen and (max-width: 500px) {
+        padding-top: 3.5%;
+    }
     .container {
         width: 1200px;
         margin: auto;
@@ -13,6 +16,9 @@
         }
         @media screen and (max-width: 1000px) {
             justify-content: center;
+        }
+        @media screen and (max-width: 500px) {
+            width: 95%;
         }
         .info {
             @media screen and (max-width: 1000px) {
@@ -30,33 +36,46 @@
                 @media screen and (max-width: 1000px) {
                     margin-top: 6%;
                 }
+                @media screen and (max-width: 500px) {
+                    font-size: 1.5625rem;
+                    text-align: center;
+                    br {
+                        display: none;
+                    }
+                }
             }
             .email {
                 margin-bottom: 4%;
+                @media screen and (max-width: 500px) {
+                    width: 85%;
+                    margin: auto;
+                }
                 .email__icon {
                     width: 40px;
                     height: 32px;
                     margin-right: 20px;
                     background: url("../icons/icon-email.svg");
                 }
+                @media screen and (max-width: 500px) {
+                    margin-right: 19px;
+                }
             }
             .tel {
+                @media screen and (max-width: 500px) {
+                    width: 80%;
+                    margin: 9px auto 0;
+                    display: flex;
+                    justify-content: space-between;
+                }
                 .tel__icon {
                     width: 40px;
                     height: 32px;
                     margin-right: 20px;
                     background: url("../icons/icon-phone.svg");
+                    @media screen and (max-width: 500px) {
+                        margin-right: 19px;
+                    }
                 } 
-            }
-            .location {
-                margin-top: -4%;
-                margin-bottom: 3%;
-                .location__icon {
-                    width: 22px;
-                    height: 32px;
-                    margin-right: 20px;
-                    background: url("../icons/pin.svg");
-                }
             }
             .email, .tel, .location {
                 display: flex;
@@ -65,11 +84,47 @@
                 align-items: center;
                 text-decoration: none;
             }
+            .location {
+                margin-top: -4%;
+                margin-bottom: 3%;
+                @media screen and (max-width: 500px) {
+                    width: 100%;
+                    margin: auto;
+                    margin-bottom: 1%;
+                    display: flex;
+                    justify-content: space-between;
+                    br {
+                        display: none;
+                    }
+                }
+                .location__icon {
+                    width: 22px;
+                    height: 32px;
+                    margin-right: 20px;
+                    background: url("../icons/pin.svg");
+                    @media screen and (max-width: 500px) {
+                        margin: 0;
+                    }
+                }
+                .contact {
+                    width: 85%;
+                }
+            }
+            
         }
         .info_center {
             margin-left: -6px;
             @media screen and (max-width: 1000px) {
                 margin-left: 52px;
+            }
+            @media screen and (max-width: 500px) {
+                width: 100%;
+                margin: auto;
+                margin-top: 5px;
+                .info__subtitle {
+                    width: 90%;
+                    margin: 19px auto;
+                }
             }
         }
         .contact {
@@ -86,6 +141,11 @@
         margin-top: 20px;
         @media screen and (max-width: 1000px) {
             margin-top: 40px;
+        }
+        @media screen and (max-width: 500px) {
+            margin-top: 24px;
+            width: 260px;
+            height: 269px;
         }
     }
 }

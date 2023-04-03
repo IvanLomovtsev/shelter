@@ -6,7 +6,7 @@
     @media screen and (max-width: 900px) {
         padding: 80px 0 100px;
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 650px) {
         padding: 42px 0;
     }
     .content {
@@ -23,7 +23,7 @@
             width: 70%;
             flex-direction: column;
         }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 650px) {
             width: 95%;
             flex-direction: column;
         }
@@ -36,7 +36,7 @@
                 margin: auto;
                 margin-top: 50px;
             }
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 650px) {
                 width: 260px;
                 height: 135.2px;
                 object-fit: fill;
@@ -50,13 +50,13 @@
                 margin: auto;
                 order: 1;
             }
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 650px) {
                 width: 100%;
             }
             .subtitle {
                 @include subtitle;
                 margin: 0;
-                @media screen and (max-width: 500px) {
+                @media screen and (max-width: 650px) {
                     font-size: 1.5625rem;
                     text-align: center;
                 }
@@ -70,7 +70,7 @@
                 letter-spacing: 0.06em;
                 color: #545454;
                 margin: 5.1% 0; 
-                @media screen and (max-width: 500px) {
+                @media screen and (max-width: 650px) {
                     font-size: 0.94rem;
                     text-align: center;
                     letter-spacing: 0;
@@ -87,7 +87,7 @@
                 align-items: center;
                 justify-content: space-between;
                 text-decoration: none;
-                @media screen and (max-width: 500px) {
+                @media screen and (max-width: 650px) {
                     width: 280px;
                     margin: auto;
                 }
@@ -107,7 +107,7 @@
                     line-height: 115%;
                     letter-spacing: 0.06em;
                     color: #545454;
-                    @media screen and (max-width: 500px) {
+                    @media screen and (max-width: 650px) {
                         font-size: 0.94rem;
                     }
                 }
@@ -120,7 +120,7 @@
                 line-height: 18px;
                 color: #B2B2B2;
                 margin-top: 5.2%;
-                @media screen and (max-width: 500px) {
+                @media screen and (max-width: 650px) {
                     width: 92%;
                     margin: auto;
                     margin-top: 20px;

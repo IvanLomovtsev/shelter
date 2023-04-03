@@ -3,11 +3,24 @@
 .help {
     width: 1200px;
     margin: auto;
+    overflow: hidden;
+    @media screen and (max-width: 1199px) {
+        width: 93.75%;
+    }
     .subtitle {
         @include subtitle;
         width: 30%;
         margin: 6.8% auto 4.7%;
         text-align: center;
+        @media screen and (max-width: 900px) {
+            width: 50%;
+            margin: 11% auto 8.1%;
+        }
+        @media screen and (max-width: 500px) {
+            width: 90%;
+            font-size: 1.5625rem;
+            margin: 14% auto 14%;
+        }
     }
     .options {
         width: 100%;
@@ -18,42 +31,94 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        @media screen and (max-width: 900px) {
+            width: 96%;
+            margin-left: 2.15%;
+            margin-bottom: 6.2%;
+        }
+        @media screen and (max-width: 500px) {
+            width: 290px;
+            justify-content: space-between;
+            margin-bottom: 3.5%;
+        }
        .way {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-right: 10%;
         margin-bottom: 3%;
+        @media screen and (max-width: 900px) {
+            width: 170px;
+            margin-left: 4%;
+            margin-right: 4.7%;
+            margin-bottom: 5.1%;
+        }
+        @media screen and (max-width: 500px) {
+            width: 130px;
+            margin-left: 0;
+            margin-right: 0;
+        }
             .way__icon {
                 width: 60px;
                 height: 60px;
+                @media screen and (max-width: 500px) {
+                    width: 50px;
+                    height: 50px;
+                }
             }
             .food {
                 background: url("../icons/food.svg");
+                @media screen and (max-width: 500px) {
+                    background-size: 80%;
+                }
             }
             .transportation {
                 background: url("../icons/transportation.svg");
+                @media screen and (max-width: 500px) {
+                    background-size: 100%;
+                }
             }
             .toys {
                 background: url("../icons/toys.svg");
+                @media screen and (max-width: 500px) {
+                    background-size: 100%;
+                }
             }
             .bowls {
                 background: url("../icons/bowls-and-cups.svg");
+                @media screen and (max-width: 500px) {
+                    background-size: 100%;
+                }
             }
             .shampoos {
                 background: url("../icons/shampoos.svg");
+                @media screen and (max-width: 500px) {
+                    background-size: 54%;
+                }
             }
             .vitamins {
                 background: url("../icons/vitamins.svg");
+                @media screen and (max-width: 500px) {
+                    background-size: 100%;
+                }
             }
             .medicines {
                 background: url("../icons/medicines.svg");
+                @media screen and (max-width: 500px) {
+                    background-size: 100%;
+                }
             }
             .collars {
                 background: url("../icons/collars-or-leashes.svg");
+                @media screen and (max-width: 500px) {
+                    background-size: 100%;
+                }
             }
             .areas {
                 background: url("../icons/sleeping-area.svg");
+                @media screen and (max-width: 500px) {
+                    background-size: 100%;
+                }
             }
             .food, .transportation, .toys, .bowls, .shampoos, .vitamins, .medicines, .collars, .areas {
                 background-position: center center;
@@ -68,6 +133,10 @@
                 letter-spacing: 0.06em;
                 color: #545454;
                 margin-top: 30px;
+                @media screen and (max-width: 500px) {
+                    font-size: 0.94rem;
+                    margin-top: 20px;
+                }
             }
        }
     }

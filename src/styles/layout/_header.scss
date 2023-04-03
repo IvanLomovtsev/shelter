@@ -111,6 +111,11 @@
             height: 2px;
             background-color: #F1CDB3;
         }
+        .menu_pets {
+            .first-line, .second-line, .third-line {
+                background-color: #000000;
+            }
+        }
     }
     .navigation_pets {
         margin-top: -30px;

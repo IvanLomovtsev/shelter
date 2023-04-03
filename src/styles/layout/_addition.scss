@@ -3,6 +3,12 @@
 .addition {
     background: #F6F6F6;
     padding: 80px 0 90px;
+    @media screen and (max-width: 900px) {
+        padding: 80px 0 100px;
+    }
+    @media screen and (max-width: 650px) {
+        padding: 42px 0;
+    }
     .content {
         width: 915px;
         margin: auto;
@@ -10,16 +16,50 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media screen and (max-width: 1279px) {
+            width: 76.25%;
+        }
+        @media screen and (max-width: 1150px) {
+            width: 70%;
+            flex-direction: column;
+        }
+        @media screen and (max-width: 650px) {
+            width: 95%;
+            flex-direction: column;
+        }
         .addition__image {
             display: block;
             margin-top: -10px;
-            object-fit: none
+            object-fit: none;
+            @media screen and (max-width: 1150px) {
+                order: 2;
+                margin: auto;
+                margin-top: 50px;
+            }
+            @media screen and (max-width: 650px) {
+                width: 260px;
+                height: 135.2px;
+                object-fit: fill;
+                margin-top: 42px;
+            }
         }
         .donation {
             width: 41.5%;
+            @media screen and (max-width: 1150px) {
+                width: 71%;
+                margin: auto;
+                order: 1;
+            }
+            @media screen and (max-width: 650px) {
+                width: 100%;
+            }
             .subtitle {
                 @include subtitle;
                 margin: 0;
+                @media screen and (max-width: 650px) {
+                    font-size: 1.5625rem;
+                    text-align: center;
+                }
             }
             .donation__bank {
                 font-family: Georgia;
@@ -30,6 +70,12 @@
                 letter-spacing: 0.06em;
                 color: #545454;
                 margin: 5.1% 0; 
+                @media screen and (max-width: 650px) {
+                    font-size: 0.94rem;
+                    text-align: center;
+                    letter-spacing: 0;
+                    margin: 7.5% 0; 
+                }
             }
             .donation__card {
                 width: 349px;
@@ -41,6 +87,10 @@
                 align-items: center;
                 justify-content: space-between;
                 text-decoration: none;
+                @media screen and (max-width: 650px) {
+                    width: 280px;
+                    margin: auto;
+                }
                 .card__icon {
                     width: 30px;
                     height: 23px;
@@ -57,6 +107,9 @@
                     line-height: 115%;
                     letter-spacing: 0.06em;
                     color: #545454;
+                    @media screen and (max-width: 650px) {
+                        font-size: 0.94rem;
+                    }
                 }
             }
             .donation__note {
@@ -67,6 +120,12 @@
                 line-height: 18px;
                 color: #B2B2B2;
                 margin-top: 5.2%;
+                @media screen and (max-width: 650px) {
+                    width: 92%;
+                    margin: auto;
+                    margin-top: 20px;
+                    text-align: justify;
+                }
             }
         }
     }

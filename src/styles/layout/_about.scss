@@ -7,15 +7,54 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media screen and (max-width: 1279px) {
+        width: 93.75%;
+    }
+    @media screen and (max-width: 900px) {
+        margin: 8.8% auto 4.5%;
+    }
+    @media screen and (max-width: 500px) {
+        margin: 12.5% auto 4.5%;
+    }
     .about__image {
         margin-left: 14.7%;
+        @media screen and (max-width: 1120px) {
+            order: 2;
+            display: block;
+            margin: 65px auto;
+        }
+        @media screen and (max-width: 500px) {
+            width: 87%;
+            margin-top: 20px;
+            margin-bottom: 27px;
+        }
     }
     .about__description {
         margin-right: 14.4%;
         width: 36%;
+        @media screen and (max-width: 1120px) {
+            order: 1;
+            width: 40%;
+            margin: auto;
+        }
+        @media screen and (max-width: 900px) {
+            order: 1;
+            width: 60%;
+            margin: auto;
+        }
+        @media screen and (max-width: 500px) {
+            width: 90%;
+            text-align: justify;
+        }
         .about__subtitle {
             @include subtitle;
             width: 80%;
+            @media screen and (max-width: 500px) {
+                text-align: center;
+                margin: auto;
+                font-size: 1.56rem;
+                margin-bottom: 25px;
+            }
         }
         .about__p {
             margin-top: 5.5%;
@@ -25,6 +64,10 @@
             font-size: 0.94rem;
             line-height: 160%;
             color: #4C4C4C;
+            @media screen and (max-width: 500px) {
+                margin-top: 0px;
+                margin-bottom: 21px;
+            }
         }
     }
 }
